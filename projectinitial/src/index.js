@@ -6,8 +6,10 @@ container.appendChild(element) */
 // Work with JSX
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Card from './components/card'
+import 'bootstrap/dist/css/bootstrap.css'
 
-const user = {
+/* const user = {
   first_name: 'Lucho',
   last_name: 'García',
   ocupations: 'Teacher',
@@ -35,12 +37,16 @@ const element = (
     {GetSalutationUser(user)}
     <img src={user.pothography} />
   </div>
-)
+) */
 
 const container = document.getElementById('root')
 
-
-
-
 // ReactDOM.render(what, __where__)
-ReactDOM.render(element, container)
+//ReactDOM.render(element, container)
+ReactDOM.render(<Card
+                title="Thecniques guide"
+                descripction="This is the first parameters of a component"
+                img="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS8UZW_0PoTxrBwFWoaFJStRQGDmusmJm-GPw&usqp=CAU"
+                leftColor="#A74CF2"
+                rightColor="#617BFB"
+  />, container)
