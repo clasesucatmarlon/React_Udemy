@@ -8,7 +8,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 const user = {
-  first_name: 'Marlon',
+  first_name: 'Lucho',
   last_name: 'García',
   ocupations: 'Teacher',
   age: 47,
@@ -26,7 +26,7 @@ function GetSalutationUser(user) {
     return <h1>Hello "strange", first deploy made with react !!!</h1>
 }
 
-/* const name = 'Marlon García' */
+// const name = 'Marlon García'
 // const element = <div>{GetSalutationUser(user)}</div>
 
 // works with children
@@ -38,5 +38,9 @@ const element = (
 )
 
 const container = document.getElementById('root')
+
+
+
+
 // ReactDOM.render(what, __where__)
 ReactDOM.render(element, container)
