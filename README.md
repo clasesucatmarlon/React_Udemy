@@ -1,7 +1,7 @@
 # React_Udemy
 Learn the basics of React from scratch and step by step with Victor Robles. Installation, Components, JSX and more
 
-## Installing reac:
+## Installing previous:
 > https://github.com/facebook/create-react-app  
 > sudo npm install -g create-react-app
 
@@ -35,3 +35,6 @@ Happy hacking!
 
 Note: the project was bootstrapped with an old unsupported version of tools.
 Please update to Node >=8.10 and npm >=5 to get supported tools in new projects.
+
+## Install project dependencies:
+  > npm i
