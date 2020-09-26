@@ -1,18 +1,39 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import Practica from './Components/Practica'
+import PracticaFunciones from './Components/PracticaFunciones'
 
 class App extends Component {
   render() {
+
+    const dataUser = {
+      nombre: "Marlon",
+      apellido: "García",
+      telefono: "3123315117"
+    }
+
+    const dataUser2 = {
+      nombre: "Pepito",
+      apellido: "Perol",
+      telefono: "3123315117"
+    }
+
+    const saludarFn = (nombre, apellido) => {
+      /* console.log("Hola my friend " + nombre + ' ' + apellido); */
+      // template string
+      console.log(`Hola ${nombre} ${apellido} Bienvenido`)
+    }
+
+    const enviarSaludo = nombre => {
+      console.log('Hola ' + nombre);
+    }
+
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div>
+        <h1>Trabajando con componentes</h1>
+        {/* <Practica name={dataUser} /> */}
+        <PracticaFunciones data={dataUser} saludar={enviarSaludo} />
+        <PracticaFunciones data={dataUser2} saludar={enviarSaludo} />
       </div>
     );
   }
